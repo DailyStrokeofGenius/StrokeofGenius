@@ -2099,7 +2099,7 @@
             <div id="todaysCourse" style="text-align: center; margin: -10px 0 15px 0; font-size: 1.1rem; color: #2c5f2d; font-weight: 600;">
                 📅 Loading today's course...
             </div>
-            <p>Test your trivia knowledge while playing a strategic 5-hole golf course. Choose your clubs wisely and answer correctly to master the game!</p>
+            <p>Test your trivia knowledge while playing a strategic 5-hole golf course. Each correct answer executes a shot, with your club and question difficulty determining distance—harder questions mean more yards!</p>
             
             <div class="how-to-play">
                 <h2>How to Play</h2>
@@ -2111,7 +2111,7 @@
                     </div>
                     <div class="instruction">
                         <div class="instruction-icon">❓</div>
-                        <div class="instruction-title">Pick Difficulty</div>
+                        <div class="instruction-title">Pick Question Difficulty</div>
                         <div class="instruction-text">Hard gives 100% distance, Average gives 85%, Easy gives 70%. Higher risk = higher reward!</div>
                     </div>
                     <div class="instruction">
@@ -3623,7 +3623,143 @@
                 { q: "What is the capital of Peru?", a: ["Lima", "Santiago", "Quito", "Bogotá"], c: 0 },
                 { q: "How many days in November?", a: ["30", "31", "29", "28"], c: 0 },
                 { q: "What is the chemical symbol for iron?", a: ["Fe", "Ir", "I", "Fr"], c: 0 },
-                { q: "Which ocean borders California?", a: ["Pacific", "Atlantic", "Arctic", "Indian"], c: 0 }
+                { q: "Which ocean borders California?", a: ["Pacific", "Atlantic", "Arctic", "Indian"], c: 0 },
+
+                // Sports History - Average
+                { q: "What team won the first Super Bowl?", a: ["Green Bay Packers", "Kansas City Chiefs", "Dallas Cowboys", "Oakland Raiders"], c: 0 },
+                { q: "Who has the most NBA championships as a player?", a: ["Bill Russell", "Michael Jordan", "LeBron James", "Magic Johnson"], c: 0 },
+                { q: "In what sport is the Lombardi Trophy awarded?", a: ["Football", "Basketball", "Baseball", "Hockey"], c: 0 },
+                { q: "Who broke Babe Ruth's home run record?", a: ["Hank Aaron", "Willie Mays", "Mickey Mantle", "Roger Maris"], c: 0 },
+                { q: "What year did the Chicago Cubs end their World Series drought?", a: ["2016", "2015", "2017", "2014"], c: 0 },
+                { q: "Who is known as 'The Great One' in hockey?", a: ["Wayne Gretzky", "Mario Lemieux", "Gordie Howe", "Bobby Orr"], c: 0 },
+                { q: "In what city are the Lakers based?", a: ["Los Angeles", "Minneapolis", "San Francisco", "Sacramento"], c: 0 },
+                { q: "What NFL team has won the most Super Bowls?", a: ["New England Patriots and Pittsburgh Steelers (tied)", "Dallas Cowboys", "San Francisco 49ers", "Green Bay Packers"], c: 0 },
+                { q: "Who won the most Tour de France titles?", a: ["Lance Armstrong (stripped), Eddy Merckx, Jacques Anquetil, Miguel Indurain (tied at 5)", "Bernard Hinault", "Chris Froome", "Alberto Contador"], c: 0 },
+                { q: "What sport does Serena Williams play?", a: ["Tennis", "Golf", "Volleyball", "Badminton"], c: 0 },
+                { q: "In what year did the U.S. hockey team defeat the Soviet Union at the Olympics?", a: ["1980", "1976", "1984", "1988"], c: 0 },
+                { q: "Who hit 73 home runs in a single season?", a: ["Barry Bonds", "Mark McGwire", "Sammy Sosa", "Roger Maris"], c: 0 },
+                { q: "What boxer was known as 'The Greatest'?", a: ["Muhammad Ali", "Mike Tyson", "Floyd Mayweather", "Sugar Ray Leonard"], c: 0 },
+                { q: "In what sport would you perform a slam dunk?", a: ["Basketball", "Volleyball", "Tennis", "Handball"], c: 0 },
+                { q: "Who won 6 NBA championships with the Chicago Bulls?", a: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman", "Phil Jackson"], c: 0 },
+
+                // American History - Average
+                { q: "Who was the first President of the United States?", a: ["George Washington", "Thomas Jefferson", "John Adams", "Benjamin Franklin"], c: 0 },
+                { q: "In what year did the American Revolution begin?", a: ["1775", "1776", "1774", "1777"], c: 0 },
+                { q: "What year did America declare independence?", a: ["1776", "1775", "1777", "1774"], c: 0 },
+                { q: "Who wrote the Star-Spangled Banner?", a: ["Francis Scott Key", "Thomas Jefferson", "Benjamin Franklin", "George Washington"], c: 0 },
+                { q: "What war was fought between the North and South?", a: ["Civil War", "Revolutionary War", "War of 1812", "Mexican-American War"], c: 0 },
+                { q: "Who was President during the Great Depression?", a: ["Herbert Hoover and Franklin D. Roosevelt", "Calvin Coolidge", "Harry Truman", "Woodrow Wilson"], c: 0 },
+                { q: "In what city was the Declaration of Independence signed?", a: ["Philadelphia", "Boston", "New York", "Washington D.C."], c: 0 },
+                { q: "What amendment abolished slavery?", a: ["13th", "14th", "15th", "19th"], c: 0 },
+                { q: "Who was the 16th President?", a: ["Abraham Lincoln", "Andrew Johnson", "Ulysses S. Grant", "James Buchanan"], c: 0 },
+                { q: "What purchase added Alaska to the United States?", a: ["Alaska Purchase", "Louisiana Purchase", "Gadsden Purchase", "Mexican Cession"], c: 0 },
+                { q: "In what year did the U.S. land on the moon?", a: ["1969", "1968", "1970", "1971"], c: 0 },
+                { q: "Who was the youngest elected President?", a: ["John F. Kennedy", "Theodore Roosevelt", "Bill Clinton", "Barack Obama"], c: 0 },
+                { q: "What war began in 1812?", a: ["War of 1812", "Revolutionary War", "Civil War", "Mexican-American War"], c: 0 },
+                { q: "In what year did World War II end?", a: ["1945", "1944", "1946", "1943"], c: 0 },
+                { q: "Who assassinated Abraham Lincoln?", a: ["John Wilkes Booth", "Lee Harvey Oswald", "James Earl Ray", "Charles Guiteau"], c: 0 },
+
+                // Movies & TV - Average
+                { q: "Who played Jack in Titanic?", a: ["Leonardo DiCaprio", "Brad Pitt", "Tom Cruise", "Matt Damon"], c: 0 },
+                { q: "What film features the quote 'May the Force be with you'?", a: ["Star Wars", "Star Trek", "E.T.", "Close Encounters"], c: 0 },
+                { q: "Who directed Jurassic Park?", a: ["Steven Spielberg", "George Lucas", "James Cameron", "Ridley Scott"], c: 0 },
+                { q: "In what city is Friends set?", a: ["New York", "Los Angeles", "Chicago", "Boston"], c: 0 },
+                { q: "What animated film features the song 'Let It Go'?", a: ["Frozen", "Moana", "Tangled", "Brave"], c: 0 },
+                { q: "Who played Iron Man in the Marvel movies?", a: ["Robert Downey Jr.", "Chris Evans", "Chris Hemsworth", "Mark Ruffalo"], c: 0 },
+                { q: "What TV show features Walter White?", a: ["Breaking Bad", "Better Call Saul", "The Sopranos", "Mad Men"], c: 0 },
+                { q: "Who directed The Dark Knight?", a: ["Christopher Nolan", "Tim Burton", "Zack Snyder", "Sam Raimi"], c: 0 },
+                { q: "What film won Best Picture in 2020?", a: ["Parasite", "1917", "Joker", "Once Upon a Time in Hollywood"], c: 0 },
+                { q: "In what year was the first Toy Story released?", a: ["1995", "1993", "1997", "1990"], c: 0 },
+                { q: "Who played Forrest Gump?", a: ["Tom Hanks", "Tom Cruise", "Brad Pitt", "Johnny Depp"], c: 0 },
+                { q: "What show features the Iron Throne?", a: ["Game of Thrones", "The Witcher", "Vikings", "The Last Kingdom"], c: 0 },
+                { q: "Who directed E.T.?", a: ["Steven Spielberg", "George Lucas", "Robert Zemeckis", "Ron Howard"], c: 0 },
+                { q: "What film features the quote 'Here's looking at you, kid'?", a: ["Casablanca", "Gone with the Wind", "Citizen Kane", "The Maltese Falcon"], c: 0 },
+                { q: "In what year did The Simpsons first air?", a: ["1989", "1987", "1991", "1990"], c: 0 },
+
+                // Pop Culture - Average
+                { q: "Who was known as the 'King of Pop'?", a: ["Michael Jackson", "Prince", "Elvis Presley", "Madonna"], c: 0 },
+                { q: "What social media platform uses a bird as its logo?", a: ["Twitter", "Instagram", "Facebook", "TikTok"], c: 0 },
+                { q: "In what year did the first Harry Potter book release?", a: ["1997", "1995", "1999", "2000"], c: 0 },
+                { q: "Who performed at the 2020 Super Bowl halftime show?", a: ["Jennifer Lopez and Shakira", "Beyoncé", "Lady Gaga", "The Weeknd"], c: 0 },
+                { q: "What streaming service is known for 'Netflix Originals'?", a: ["Netflix", "Hulu", "Amazon Prime", "Disney+"], c: 0 },
+                { q: "Who wrote the Hunger Games trilogy?", a: ["Suzanne Collins", "J.K. Rowling", "Stephenie Meyer", "Veronica Roth"], c: 0 },
+                { q: "What year did the first iPhone release?", a: ["2007", "2005", "2008", "2006"], c: 0 },
+                { q: "Who is the creator of SpaceX?", a: ["Elon Musk", "Jeff Bezos", "Richard Branson", "Mark Zuckerberg"], c: 0 },
+                { q: "What video game features a battle royale on an island?", a: ["Fortnite", "Call of Duty", "Apex Legends", "PUBG"], c: 0 },
+                { q: "In what year did TikTok launch globally?", a: ["2018", "2016", "2019", "2017"], c: 0 },
+                { q: "Who is known as 'Queen Bey'?", a: ["Beyoncé", "Rihanna", "Nicki Minaj", "Cardi B"], c: 0 },
+                { q: "What reality show features the Kardashians?", a: ["Keeping Up with the Kardashians", "The Real Housewives", "Love Island", "Big Brother"], c: 0 },
+                { q: "Who painted the Mona Lisa?", a: ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"], c: 0 },
+                { q: "What app is known for short viral videos?", a: ["TikTok", "Snapchat", "Instagram", "Vine"], c: 0 },
+                { q: "Who won the first season of American Idol?", a: ["Kelly Clarkson", "Carrie Underwood", "Chris Daughtry", "Adam Lambert"], c: 0 },
+
+                // Music - Average
+                { q: "Who sang 'Purple Rain'?", a: ["Prince", "Michael Jackson", "Elton John", "David Bowie"], c: 0 },
+                { q: "What band released 'Bohemian Rhapsody'?", a: ["Queen", "The Beatles", "Led Zeppelin", "Pink Floyd"], c: 0 },
+                { q: "Who is known as the 'Queen of Soul'?", a: ["Aretha Franklin", "Whitney Houston", "Diana Ross", "Tina Turner"], c: 0 },
+                { q: "What instrument does a DJ primarily use?", a: ["Turntables", "Piano", "Guitar", "Drums"], c: 0 },
+                { q: "Who sang 'Like a Virgin'?", a: ["Madonna", "Cyndi Lauper", "Janet Jackson", "Paula Abdul"], c: 0 },
+                { q: "What band was Freddie Mercury in?", a: ["Queen", "The Who", "The Rolling Stones", "AC/DC"], c: 0 },
+                { q: "Who released the album 'Thriller'?", a: ["Michael Jackson", "Prince", "Stevie Wonder", "Marvin Gaye"], c: 0 },
+                { q: "What genre is Bob Marley known for?", a: ["Reggae", "Jazz", "Blues", "Rock"], c: 0 },
+                { q: "Who sang 'Rolling in the Deep'?", a: ["Adele", "Amy Winehouse", "Sam Smith", "Ed Sheeran"], c: 0 },
+                { q: "What band wrote 'Stairway to Heaven'?", a: ["Led Zeppelin", "Pink Floyd", "The Eagles", "Fleetwood Mac"], c: 0 },
+                { q: "Who is known as the 'King of Rock and Roll'?", a: ["Elvis Presley", "Chuck Berry", "Little Richard", "Jerry Lee Lewis"], c: 0 },
+                { q: "What rapper released 'Lose Yourself'?", a: ["Eminem", "50 Cent", "Dr. Dre", "Snoop Dogg"], c: 0 },
+                { q: "Who sang 'Wonderwall'?", a: ["Oasis", "Blur", "Radiohead", "The Verve"], c: 0 },
+                { q: "What is the highest female singing voice?", a: ["Soprano", "Alto", "Tenor", "Mezzo-soprano"], c: 0 },
+                { q: "Who released 'Back in Black'?", a: ["AC/DC", "Metallica", "Black Sabbath", "Iron Maiden"], c: 0 },
+
+                // Science & Nature - Average
+                { q: "What planet is closest to the Sun?", a: ["Mercury", "Venus", "Earth", "Mars"], c: 0 },
+                { q: "How many bones are in the adult human body?", a: ["206", "196", "216", "186"], c: 0 },
+                { q: "What is H2O?", a: ["Water", "Hydrogen Peroxide", "Salt", "Acid"], c: 0 },
+                { q: "What gas do plants absorb from the atmosphere?", a: ["Carbon Dioxide", "Oxygen", "Nitrogen", "Helium"], c: 0 },
+                { q: "What is the largest organ in the human body?", a: ["Skin", "Liver", "Brain", "Heart"], c: 0 },
+                { q: "What force keeps us on the ground?", a: ["Gravity", "Magnetism", "Friction", "Inertia"], c: 0 },
+                { q: "How many chambers does the human heart have?", a: ["4", "2", "3", "5"], c: 0 },
+                { q: "What is the chemical symbol for gold?", a: ["Au", "Go", "Gd", "Ag"], c: 0 },
+                { q: "What type of animal is a dolphin?", a: ["Mammal", "Fish", "Reptile", "Amphibian"], c: 0 },
+                { q: "What planet is known as the Red Planet?", a: ["Mars", "Venus", "Jupiter", "Mercury"], c: 0 },
+                { q: "What is the center of an atom called?", a: ["Nucleus", "Proton", "Electron", "Neutron"], c: 0 },
+                { q: "How many legs does a spider have?", a: ["8", "6", "10", "12"], c: 0 },
+                { q: "What is the boiling point of water at sea level?", a: ["100°C", "90°C", "110°C", "95°C"], c: 0 },
+                { q: "What is the largest planet in our solar system?", a: ["Jupiter", "Saturn", "Neptune", "Uranus"], c: 0 },
+                { q: "What part of the plant conducts photosynthesis?", a: ["Leaves", "Roots", "Stem", "Flowers"], c: 0 },
+
+                // Golf History - Average
+                { q: "What tournament is held at Augusta National?", a: ["The Masters", "U.S. Open", "PGA Championship", "British Open"], c: 0 },
+                { q: "How many holes are on a regulation golf course?", a: ["18", "9", "27", "36"], c: 0 },
+                { q: "What is a score of one under par called?", a: ["Birdie", "Eagle", "Bogey", "Par"], c: 0 },
+                { q: "Who is known as 'The Golden Bear'?", a: ["Jack Nicklaus", "Arnold Palmer", "Gary Player", "Tiger Woods"], c: 0 },
+                { q: "What is the maximum number of clubs allowed in a golf bag?", a: ["14", "12", "16", "18"], c: 0 },
+                { q: "What color jacket do Masters winners receive?", a: ["Green", "Red", "Blue", "Yellow"], c: 0 },
+                { q: "What is a hole-in-one called?", a: ["Ace", "Eagle", "Albatross", "Birdie"], c: 0 },
+                { q: "What is a score of two under par called?", a: ["Eagle", "Birdie", "Albatross", "Par"], c: 0 },
+                { q: "In what country is St Andrews golf course located?", a: ["Scotland", "England", "Ireland", "Wales"], c: 0 },
+                { q: "What is the term for the starting area of each hole?", a: ["Tee box", "Fairway", "Green", "Rough"], c: 0 },
+                { q: "Who won the 2019 Masters in dramatic fashion?", a: ["Tiger Woods", "Phil Mickelson", "Rory McIlroy", "Brooks Koepka"], c: 0 },
+                { q: "What is a score of one over par called?", a: ["Bogey", "Birdie", "Par", "Double Bogey"], c: 0 },
+                { q: "How many major championships are there in men's golf?", a: ["4", "3", "5", "6"], c: 0 },
+                { q: "What club is used on the putting green?", a: ["Putter", "Wedge", "Iron", "Wood"], c: 0 },
+                { q: "What is the oldest golf major championship?", a: ["The Open Championship (British Open)", "U.S. Open", "PGA Championship", "The Masters"], c: 0 },
+
+                // World Geography - Average  
+                { q: "What is the largest country by land area?", a: ["Russia", "Canada", "China", "United States"], c: 0 },
+                { q: "What ocean is between America and Europe?", a: ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean"], c: 0 },
+                { q: "What is the largest continent?", a: ["Asia", "Africa", "North America", "Europe"], c: 0 },
+                { q: "In what country is the Eiffel Tower?", a: ["France", "Italy", "Spain", "Germany"], c: 0 },
+                { q: "What is the longest mountain range in the world?", a: ["Andes", "Rockies", "Himalayas", "Alps"], c: 0 },
+                { q: "What desert covers much of northern Africa?", a: ["Sahara", "Gobi", "Arabian", "Kalahari"], c: 0 },
+                { q: "What river runs through Egypt?", a: ["Nile", "Amazon", "Mississippi", "Danube"], c: 0 },
+                { q: "What is the smallest continent?", a: ["Australia", "Europe", "Antarctica", "South America"], c: 0 },
+                { q: "What country has the most population?", a: ["India (as of 2023)", "China", "United States", "Indonesia"], c: 0 },
+                { q: "What mountain range separates France from Spain?", a: ["Pyrenees", "Alps", "Apennines", "Carpathians"], c: 0 },
+                { q: "What sea is between Europe and Africa?", a: ["Mediterranean Sea", "Red Sea", "Black Sea", "Caspian Sea"], c: 0 },
+                { q: "In what country is Machu Picchu?", a: ["Peru", "Mexico", "Brazil", "Chile"], c: 0 },
+                { q: "What is the tallest mountain in the world?", a: ["Mount Everest", "K2", "Kangchenjunga", "Lhotse"], c: 0 },
+                { q: "What strait separates Alaska from Russia?", a: ["Bering Strait", "Strait of Gibraltar", "Strait of Hormuz", "Bosphorus Strait"], c: 0 },
+                { q: "What is the largest lake in Africa?", a: ["Lake Victoria", "Lake Tanganyika", "Lake Malawi", "Lake Chad"], c: 0 }
 
 
 
@@ -3838,7 +3974,143 @@
                 { q: "What state is Pensacola located in?", a: ["Florida", "Alabama", "Georgia", "Louisiana"], c: 0 },
                 { q: "What is Pensacola known as?", a: ["The City of Five Flags", "The Sunshine City", "The Emerald Coast", "The Panhandle Pearl"], c: 0 },
                 { q: "What bay does Pensacola sit on?", a: ["Pensacola Bay", "Tampa Bay", "Mobile Bay", "Apalachicola Bay"], c: 0 },
-                { q: "What military branch has a major training center in Pensacola?", a: ["U.S. Navy", "U.S. Air Force", "U.S. Army", "U.S. Marines"], c: 0 }
+                { q: "What military branch has a major training center in Pensacola?", a: ["U.S. Navy", "U.S. Air Force", "U.S. Army", "U.S. Marines"], c: 0 },
+
+                // Sports History - Easy
+                { q: "How many players are on a basketball team on the court?", a: ["5", "6", "4", "7"], c: 0 },
+                { q: "What sport uses a puck?", a: ["Hockey", "Soccer", "Basketball", "Football"], c: 0 },
+                { q: "How many bases are on a baseball field?", a: ["4", "3", "5", "2"], c: 0 },
+                { q: "What sport is the Super Bowl for?", a: ["Football", "Basketball", "Baseball", "Hockey"], c: 0 },
+                { q: "How many points is a touchdown worth?", a: ["6", "7", "8", "5"], c: 0 },
+                { q: "What sport uses a hoop and a ball?", a: ["Basketball", "Volleyball", "Tennis", "Football"], c: 0 },
+                { q: "How many periods are in a hockey game?", a: ["3", "4", "2", "5"], c: 0 },
+                { q: "What do you call it when you knock down all the pins in bowling?", a: ["Strike", "Spare", "Turkey", "Split"], c: 0 },
+                { q: "How many outs are in an inning in baseball?", a: ["6", "3", "9", "12"], c: 0 },
+                { q: "What sport is played at Wimbledon?", a: ["Tennis", "Golf", "Cricket", "Badminton"], c: 0 },
+                { q: "How many points is a field goal worth in football?", a: ["3", "2", "6", "4"], c: 0 },
+                { q: "What color is a basketball?", a: ["Orange", "Brown", "Red", "Yellow"], c: 0 },
+                { q: "How many strikes make an out in baseball?", a: ["3", "4", "2", "5"], c: 0 },
+                { q: "What sport uses a net and a shuttlecock?", a: ["Badminton", "Tennis", "Volleyball", "Pickleball"], c: 0 },
+                { q: "How many innings are in a baseball game?", a: ["9", "7", "10", "12"], c: 0 },
+
+                // American History - Easy
+                { q: "How many stars are on the American flag?", a: ["50", "48", "52", "49"], c: 0 },
+                { q: "What country did America gain independence from?", a: ["Great Britain", "France", "Spain", "Portugal"], c: 0 },
+                { q: "What is the first line of the Pledge of Allegiance?", a: ["I pledge allegiance to the flag", "For the United States of America", "One nation under God", "With liberty and justice"], c: 0 },
+                { q: "Who is on the one dollar bill?", a: ["George Washington", "Abraham Lincoln", "Thomas Jefferson", "Benjamin Franklin"], c: 0 },
+                { q: "What are the first 10 amendments called?", a: ["Bill of Rights", "Constitution", "Declaration", "Articles"], c: 0 },
+                { q: "How many branches of government are there?", a: ["3", "2", "4", "5"], c: 0 },
+                { q: "What is the national bird of the United States?", a: ["Bald Eagle", "Turkey", "Hawk", "Falcon"], c: 0 },
+                { q: "What day is Independence Day?", a: ["July 4th", "July 1st", "June 4th", "August 4th"], c: 0 },
+                { q: "How many stripes are on the American flag?", a: ["13", "15", "10", "11"], c: 0 },
+                { q: "Who is on the penny?", a: ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "Franklin Roosevelt"], c: 0 },
+                { q: "What building does the President live in?", a: ["White House", "Capitol Building", "Pentagon", "Oval Office"], c: 0 },
+                { q: "What is the longest river in the United States?", a: ["Missouri River", "Mississippi River", "Colorado River", "Rio Grande"], c: 0 },
+                { q: "What city is the Statue of Liberty in?", a: ["New York", "Philadelphia", "Boston", "Washington D.C."], c: 0 },
+                { q: "How many states are in the United States?", a: ["50", "48", "52", "51"], c: 0 },
+                { q: "What month is Election Day?", a: ["November", "October", "December", "September"], c: 0 },
+
+                // Movies & TV - Easy
+                { q: "What type of fish is Nemo?", a: ["Clownfish", "Goldfish", "Angelfish", "Guppy"], c: 0 },
+                { q: "What color is SpongeBob?", a: ["Yellow", "Orange", "Blue", "Green"], c: 0 },
+                { q: "Who lives in a pineapple under the sea?", a: ["SpongeBob SquarePants", "Patrick Star", "Squidward", "Mr. Krabs"], c: 0 },
+                { q: "What animal is Mickey Mouse?", a: ["Mouse", "Rat", "Dog", "Cat"], c: 0 },
+                { q: "In Frozen, what is the snowman's name?", a: ["Olaf", "Kristoff", "Sven", "Hans"], c: 0 },
+                { q: "What superhero wears a cape and a red S?", a: ["Superman", "Batman", "Spider-Man", "Captain America"], c: 0 },
+                { q: "What princess has long magical hair?", a: ["Rapunzel", "Cinderella", "Belle", "Ariel"], c: 0 },
+                { q: "What color is the Hulk?", a: ["Green", "Blue", "Red", "Yellow"], c: 0 },
+                { q: "Who says 'To infinity and beyond'?", a: ["Buzz Lightyear", "Woody", "Rex", "Hamm"], c: 0 },
+                { q: "What animal is Simba in The Lion King?", a: ["Lion", "Tiger", "Leopard", "Cheetah"], c: 0 },
+                { q: "What is the name of the cowboy in Toy Story?", a: ["Woody", "Buzz", "Rex", "Slinky"], c: 0 },
+                { q: "What color is Elmo?", a: ["Red", "Blue", "Yellow", "Green"], c: 0 },
+                { q: "Who is Spider-Man's alter ego?", a: ["Peter Parker", "Bruce Wayne", "Clark Kent", "Tony Stark"], c: 0 },
+                { q: "What animal is Dumbo?", a: ["Elephant", "Hippo", "Rhino", "Giraffe"], c: 0 },
+                { q: "In what movie do toys come to life?", a: ["Toy Story", "Cars", "Finding Nemo", "The Incredibles"], c: 0 },
+
+                // Pop Culture - Easy
+                { q: "What social media app has a camera as its logo?", a: ["Instagram", "Facebook", "Twitter", "TikTok"], c: 0 },
+                { q: "What video game features a plumber named Mario?", a: ["Super Mario Bros", "Sonic", "Zelda", "Pokemon"], c: 0 },
+                { q: "What company makes the iPhone?", a: ["Apple", "Samsung", "Google", "Microsoft"], c: 0 },
+                { q: "What app is used to watch videos online?", a: ["YouTube", "Netflix", "TikTok", "Instagram"], c: 0 },
+                { q: "What sport does Cristiano Ronaldo play?", a: ["Soccer", "Basketball", "Tennis", "Baseball"], c: 0 },
+                { q: "What color is Mickey Mouse's shorts?", a: ["Red", "Blue", "Yellow", "Black"], c: 0 },
+                { q: "What animal is Pikachu?", a: ["Mouse", "Cat", "Dog", "Hamster"], c: 0 },
+                { q: "What is the name of Harry Potter's owl?", a: ["Hedwig", "Crookshanks", "Scabbers", "Fang"], c: 0 },
+                { q: "What game involves building with blocks?", a: ["Minecraft", "Roblox", "Fortnite", "Tetris"], c: 0 },
+                { q: "What planet do we live on?", a: ["Earth", "Mars", "Venus", "Jupiter"], c: 0 },
+                { q: "What animal says 'meow'?", a: ["Cat", "Dog", "Cow", "Duck"], c: 0 },
+                { q: "What color is the sky on a clear day?", a: ["Blue", "White", "Green", "Yellow"], c: 0 },
+                { q: "What do bees make?", a: ["Honey", "Milk", "Jam", "Syrup"], c: 0 },
+                { q: "How many legs does a dog have?", a: ["4", "2", "6", "8"], c: 0 },
+                { q: "What do you use to write on paper?", a: ["Pen or Pencil", "Crayon only", "Marker only", "Paint"], c: 0 },
+
+                // Music - Easy
+                { q: "How many notes are in a musical scale?", a: ["7", "8", "5", "10"], c: 0 },
+                { q: "What instrument has black and white keys?", a: ["Piano", "Guitar", "Drum", "Flute"], c: 0 },
+                { q: "What are the people who sing in a group called?", a: ["Choir", "Band", "Orchestra", "Ensemble"], c: 0 },
+                { q: "What instrument do you blow into to make music?", a: ["Flute, Trumpet, or Clarinet", "Piano", "Guitar", "Drum"], c: 0 },
+                { q: "How many strings does a guitar typically have?", a: ["6", "4", "8", "5"], c: 0 },
+                { q: "What is a group of musicians called?", a: ["Band", "Choir", "Audience", "Crew"], c: 0 },
+                { q: "What do you use to play a drum?", a: ["Drumsticks or Hands", "Bow", "Reed", "Pick"], c: 0 },
+                { q: "What instrument is Yo-Yo Ma famous for playing?", a: ["Cello", "Violin", "Piano", "Flute"], c: 0 },
+                { q: "What is the loudest instrument in an orchestra?", a: ["Percussion (drums)", "Violin", "Flute", "Piano"], c: 0 },
+                { q: "What note comes after 'Do Re Mi'?", a: ["Fa", "So", "La", "Ti"], c: 0 },
+                { q: "What shape is a tambourine?", a: ["Circle", "Square", "Triangle", "Rectangle"], c: 0 },
+                { q: "What instrument has pedals and pipes?", a: ["Organ", "Piano", "Harp", "Guitar"], c: 0 },
+                { q: "What do you call a person who writes music?", a: ["Composer", "Conductor", "Musician", "Singer"], c: 0 },
+                { q: "What is the lowest male singing voice?", a: ["Bass", "Tenor", "Alto", "Soprano"], c: 0 },
+                { q: "What instrument is triangle-shaped?", a: ["Triangle", "Harp", "Xylophone", "Cymbal"], c: 0 },
+
+                // Science & Nature - Easy
+                { q: "What do plants need to grow?", a: ["Water, sunlight, and soil", "Only water", "Only sunlight", "Only soil"], c: 0 },
+                { q: "How many legs does an insect have?", a: ["6", "8", "4", "10"], c: 0 },
+                { q: "What animal is the fastest on land?", a: ["Cheetah", "Lion", "Horse", "Dog"], c: 0 },
+                { q: "What color are emeralds?", a: ["Green", "Blue", "Red", "Yellow"], c: 0 },
+                { q: "What do caterpillars turn into?", a: ["Butterflies or Moths", "Bees", "Flies", "Beetles"], c: 0 },
+                { q: "How many days are in a year?", a: ["365", "360", "300", "400"], c: 0 },
+                { q: "What is the largest animal in the ocean?", a: ["Blue Whale", "Shark", "Dolphin", "Octopus"], c: 0 },
+                { q: "What season comes after winter?", a: ["Spring", "Summer", "Fall", "Autumn"], c: 0 },
+                { q: "What do bees collect from flowers?", a: ["Nectar and Pollen", "Water", "Leaves", "Seeds"], c: 0 },
+                { q: "How many colors are in a rainbow?", a: ["7", "5", "6", "8"], c: 0 },
+                { q: "What is the hottest season?", a: ["Summer", "Spring", "Fall", "Winter"], c: 0 },
+                { q: "What animal is known for its trunk?", a: ["Elephant", "Giraffe", "Hippo", "Rhino"], c: 0 },
+                { q: "What do birds use to fly?", a: ["Wings", "Legs", "Tail", "Beak"], c: 0 },
+                { q: "What is the coldest season?", a: ["Winter", "Spring", "Fall", "Summer"], c: 0 },
+                { q: "What animal builds dams?", a: ["Beaver", "Otter", "Muskrat", "Duck"], c: 0 },
+
+                // Golf History - Easy
+                { q: "What do you hit a golf ball with?", a: ["Golf club", "Bat", "Racket", "Stick"], c: 0 },
+                { q: "What is the small peg you put the ball on called?", a: ["Tee", "Pin", "Marker", "Flag"], c: 0 },
+                { q: "What do you call the target area with the hole?", a: ["Green", "Fairway", "Rough", "Tee box"], c: 0 },
+                { q: "What shape is a golf ball?", a: ["Round/Sphere", "Square", "Oval", "Rectangle"], c: 0 },
+                { q: "What do you carry golf clubs in?", a: ["Golf bag", "Backpack", "Suitcase", "Box"], c: 0 },
+                { q: "What is the grassy area between tee and green called?", a: ["Fairway", "Rough", "Green", "Bunker"], c: 0 },
+                { q: "What is a sand trap also called?", a: ["Bunker", "Hazard", "Pit", "Trap"], c: 0 },
+                { q: "What is par?", a: ["The expected score for a hole", "A type of club", "A golf tournament", "A golf ball brand"], c: 0 },
+                { q: "How many dimples does a typical golf ball have?", a: ["Between 300-500", "About 100", "About 50", "Over 1000"], c: 0 },
+                { q: "What color is a golf ball usually?", a: ["White", "Yellow", "Orange", "Red"], c: 0 },
+                { q: "What is the stick with the flag called?", a: ["Pin or Flagstick", "Tee", "Marker", "Pole"], c: 0 },
+                { q: "What do you use to mark your ball on the green?", a: ["Ball marker", "Coin", "Tee", "Flag"], c: 0 },
+                { q: "What is the starting point of each hole called?", a: ["Tee box", "Green", "Fairway", "Rough"], c: 0 },
+                { q: "What do you yell to warn others of an errant shot?", a: ["Fore", "Watch out", "Duck", "Incoming"], c: 0 },
+                { q: "What is a score of 3 under par called?", a: ["Albatross or Double Eagle", "Eagle", "Birdie", "Hole in one"], c: 0 },
+
+                // World Geography - Easy  
+                { q: "What continent is the United States in?", a: ["North America", "South America", "Europe", "Asia"], c: 0 },
+                { q: "What ocean is on the west coast of the United States?", a: ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"], c: 0 },
+                { q: "What is the largest ocean?", a: ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"], c: 0 },
+                { q: "What continent is China in?", a: ["Asia", "Europe", "Africa", "Australia"], c: 0 },
+                { q: "What is the coldest continent?", a: ["Antarctica", "Arctic", "Asia", "Europe"], c: 0 },
+                { q: "What country is the Great Wall in?", a: ["China", "Japan", "Korea", "Mongolia"], c: 0 },
+                { q: "What continent is Egypt in?", a: ["Africa", "Asia", "Europe", "South America"], c: 0 },
+                { q: "What country has a maple leaf on its flag?", a: ["Canada", "United States", "Mexico", "Ireland"], c: 0 },
+                { q: "What is the biggest hot desert?", a: ["Sahara Desert", "Gobi Desert", "Arabian Desert", "Mojave Desert"], c: 0 },
+                { q: "What continent is Brazil in?", a: ["South America", "North America", "Africa", "Europe"], c: 0 },
+                { q: "What is the tallest type of tree?", a: ["Redwood or Sequoia", "Oak", "Pine", "Maple"], c: 0 },
+                { q: "What country is shaped like a boot?", a: ["Italy", "Spain", "Greece", "Portugal"], c: 0 },
+                { q: "What ocean is the coldest?", a: ["Arctic Ocean", "Atlantic Ocean", "Pacific Ocean", "Indian Ocean"], c: 0 },
+                { q: "What is the line that divides the Earth in half called?", a: ["Equator", "Prime Meridian", "Tropic of Cancer", "International Date Line"], c: 0 },
+                { q: "What country is famous for the kangaroo?", a: ["Australia", "New Zealand", "South Africa", "India"], c: 0 }
 
 
             ]
@@ -5500,6 +5772,29 @@
                 }
                 
                 gameState.shotsOnHole++;
+                
+                // Check for 10-stroke maximum
+                if (gameState.shotsOnHole >= 10) {
+                    // Force score to 10, end hole
+                    gameState.shotsOnHole = 10;
+                    
+                    // Show "MAXED OUT" message
+                    const modal = document.getElementById('triviaModal');
+                    const questionEl = document.getElementById('triviaQuestion');
+                    const answersEl = document.getElementById('triviaAnswers');
+                    
+                    questionEl.textContent = "⚠️ MAXED OUT! ⚠️";
+                    questionEl.style.cssText = 'font-size: 2rem; color: #e74c3c; font-weight: 700; text-align: center;';
+                    answersEl.innerHTML = '<div style="text-align: center; padding: 20px; font-size: 1.2rem;">You have reached the maximum of 10 strokes on this hole.</div>';
+                    modal.style.display = 'flex';
+                    
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                        completeHole();
+                    }, 3000);
+                    
+                    return; // Exit processShot early
+                }
                 
                 // Animate ball flight over course
                 const hole = gameState.course[gameState.currentHole];
